@@ -1,0 +1,274 @@
+:root {
+    --cor-principal: #4A154B;
+    --cor-secundaria: #8C1D40;
+    --cor-fundo-nav: #F8F1F9;
+    --cor-texto: rgb(55, 55, 55);
+    --cor-branca: #ffffff;
+    --cor-borda: rgb(188, 188, 188);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: var(--cor-texto);
+    background-color: var(--cor-branca);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* ================= HEADER ================= */
+header {
+    background-color: var(--cor-principal);
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+}
+
+.titulo {
+    background-color: var(--cor-principal);
+    color: var(--cor-branca);
+    font-size: 1.5rem;
+    padding: 0.5rem 0;
+}
+
+#btn-menu {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--cor-branca);
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+
+nav {
+    margin: 0 auto;
+}
+
+
+.navigation {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #F8F1F9;
+    align-items: center;
+}
+
+
+.navigation li {
+    flex: 1 1 auto;
+}
+
+
+.navigation a {
+    display: block;
+    color: #8C1D40;
+    padding: 0.75rem;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+.navigation a:hover {
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-color: #8C1D40;
+}
+
+
+/* ================= MAIN ================= */
+main {
+    flex: 1;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.nome {
+    text-align: left;
+    padding-bottom: 1.5rem;
+    color: var(--cor-texto);
+    font-size: 2rem;
+}
+
+/* Content Container (Sobre Mim + Foto) */
+.content-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    padding-bottom: 2rem;
+}
+
+.card {
+    border: 0.5px solid var(--cor-borda);
+    border-radius: 8px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.card h2 {
+    background-color: var(--cor-principal);
+    color: var(--cor-branca);
+    text-align: center;
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+.card-body {
+    padding: 2rem;
+    text-align: justify;
+    font-size: 1rem;
+}
+
+.foto-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.eu-img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 4px;
+    border: 1px solid rgb(221, 221, 221);
+}
+
+/*creditooooooooooooooossss*/
+
+.filtro-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    align-items: start;
+    padding-bottom: 2rem;
+}
+
+.titulo-cursos {
+    background-color: var(--cor-principal);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+}
+
+.cabecalho-card {
+    background-color: var(--cor-principal);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 20px;
+}
+
+.conteudo-card {
+    padding: 20px;
+}
+
+.grupo-botoes {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.btn-filtro {
+    flex: 1;
+    background-color: var(--cor-fundo-nav);
+    color: var(--cor-secundaria);
+    border: none;
+    padding: 10px 0;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+.btn-filtro:hover,
+.btn-filtro.ativo {
+    opacity: 0.85;
+    outline: 2px solid var(--cor-principal);
+}
+
+.total-creditos {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+    color: rgb(51, 51, 51);
+}
+
+#creditos-total {
+    font-weight: bold;
+}
+
+.grid-cursos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.card-curso {
+    background-color: var(--cor-principal);
+    color: rgb(255, 255, 255);
+    border-radius: 8px;
+    padding: 18px 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+}
+
+.card-curso:hover {
+    transform: translateY(-2px);
+}
+
+.card-curso.pendente {
+    background-color: rgb(224, 224, 224);
+    color: rgb(85, 85, 85);
+    border: 1px solid rgb(204, 204, 204);
+}
+
+/* ================= FAIXA REDES SOCIAIS (Fundo Branco) ================= */
+.faixa-redes-sociais {
+    padding: 15px 0;
+}
+
+.redes-sociais {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.redes-sociais a img {
+    width: 70px;
+    height: 70px;
+    display: block;
+}
+
+/* ================= FOOTER (Roxo) ================= */
+footer {
+    text-align: center;
+}
+
+footer p,
+footer span {
+    color: var(--cor-branca);
+    padding: 0.3rem;
+}
+
+.footer-info {
+    background-color: #4A154B;
+    padding: 50px;
+    margin: 0;
+}
