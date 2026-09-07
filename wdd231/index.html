@@ -1,11 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WDD 231 – Caroline Morais Cardoso</title>
+    <meta name="description" content="WDD 231 - Caroline Morais Cardoso - Biografia - Minha História">
+    <meta name="author" content="Caroline Morais Cardoso">
+    <link rel="stylesheet" href="estilos/maior.css">
+    <link rel="stylesheet" href="estilos/telaspequenas.css">
+    <script src="scripts/datas.js" defer></script>
+    <script src="scripts/cursos.js" defer></script>
+    <script src="scripts/botao.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    
+    <header>
+        <div class="header-top">
+            <h1 class="titulo">Sobre mim</h1>
+            <button id="btn-menu" aria-label="Abrir Menu">&#9776;</button>
+        </div>
+        <nav id="menu-nav">
+            <ul class="navigation" id="nav-menu">
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="#">Projeto da Câmara</a></li>
+                <li><a href="#">Projeto Final</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2 class="nome">Página Inicial</h2>
+
+        <!-- Seção Sobre Mim + Foto -->
+        <div class="content-container">
+            <section class="card sobre-mim">
+                <h2>Sobre Mim</h2>
+                <div class="card-body">
+                    <p>
+                        Meu nome é Caroline e moro no Brasil. Tenho paixão por aprender coisas novas e estou sempre
+                        buscando evoluir, tanto na minha vida pessoal quanto no caminho profissional. Atualmente, me
+                        dedico aos estudos e ao universo da tecnologia, desenvolvendo minhas habilidades com entusiasmo
+                        e foco. Valorizo muito a organização, a tranquilidade no dia a dia e os momentos simples da
+                        rotina. Nas horas livres, nada me deixa mais feliz do que aproveitar uma boa comida, conhecer
+                        lugares diferentes e compartilhar experiências marcantes ao lado da minha família e das pessoas
+                        que amo, construindo memórias especiais a cada novo passo.
+                    </p>
+                </div>
+            </section>
+
+            <section class="card foto">
+                <h2>Foto</h2>
+                <div class="card-body foto-body">
+                    <img src="imagens/perfil.jpg" alt="Foto de Caroline" class="eu-img">
+                </div>
+            </section>
+        </div>
+
+        <div class="filtro-container">
+            <section class="conteudo-card">
+                <h2 class="titulo-cursos">Cursos de Certificação Web</h2>
+                <div class="grupo-botoes">
+                    <button class="btn-filtro ativo" data-assunto="todos">Todos</button>
+                    <button class="btn-filtro" data-assunto="CSE">CSE</button>
+                    <button class="btn-filtro" data-assunto="WDD">WDD</button>
+                </div>
+
+                <p class="total-creditos">
+                    O número total de créditos é: <span id="creditos-total">0</span>
+                </p>
+
+                <div id="grid-cursos" class="grid-cursos"></div>
+            </section>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="faixa-redes-sociais">
+            <div class="redes-sociais">
+                <a href="https://github.com" target="_blank" aria-label="GitHub">
+                    <img src="imagens/github.svg" alt="GitHub">
+                </a>
+                <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+                    <img src="imagens/linkedin.svg" alt="LinkedIn">
+                </a>
+                <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                    <img src="imagens/instagram.svg" alt="Instagram">
+                </a>
+            </div>
+        </div>
+        <div class="footer-info">
+            <p>&copy; <span id="anoatual"></span> • Caroline Morais Cardoso • Mato Grosso do Sul, Brasil</p>
+            <p>Última modificação: <span id="ultimaModificacao"></span></p>
+        </div>
+    </footer>
+
 </body>
+
 </html>
