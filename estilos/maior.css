@@ -22,7 +22,6 @@ body {
     min-height: 100vh;
 }
 
-/* ================= HEADER ================= */
 header {
     background-color: var(--cor-principal);
 }
@@ -86,7 +85,6 @@ nav {
 }
 
 
-/* ================= MAIN ================= */
 main {
     flex: 1;
     margin: 1rem;
@@ -100,7 +98,6 @@ main {
     font-size: 2rem;
 }
 
-/* Content Container (Sobre Mim + Foto) */
 .content-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -143,7 +140,6 @@ main {
     border: 1px solid rgb(221, 221, 221);
 }
 
-/*creditooooooooooooooossss*/
 
 .filtro-container {
     display: grid;
@@ -238,7 +234,6 @@ main {
     border: 1px solid rgb(204, 204, 204);
 }
 
-/* ================= FAIXA REDES SOCIAIS (Fundo Branco) ================= */
 .faixa-redes-sociais {
     padding: 15px 0;
 }
@@ -256,7 +251,6 @@ main {
     display: block;
 }
 
-/* ================= FOOTER (Roxo) ================= */
 footer {
     text-align: center;
 }
