@@ -183,7 +183,7 @@ main {
 .btn-filtro {
     flex: 1;
     background-color: var(--cor-fundo-nav);
-    color: rgbvar(--cor-secundaria);
+    color: var(--cor-secundaria);
     border: none;
     padding: 10px 0;
     border-radius: 6px;
