@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   async function obterDadosMembros() {
     try {
-      const resposta = await fetch("scripts/membros.json");
+      const resposta = await fetch("dados/membros.json");
       if (!resposta.ok) {
         throw new Error(`Erro ao carregar JSON: ${resposta.status}`);
       }
