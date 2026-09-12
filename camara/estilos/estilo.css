@@ -18,7 +18,7 @@
 }
 
 /* Suporte ao Modo Escuro */
-body.modo-escuro {
+.modo-escuro {
   --cor-fundo-pagina: #121212;
   --cor-fundo-cartao: #1e1e1e;
   --cor-texto: #e0e0e0;
