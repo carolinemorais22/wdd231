@@ -1,0 +1,61 @@
+/* ==================
+   Responsividade
+   ================== */
+
+@media (min-width: 768px) {
+  #botao-menu {
+    display: none;
+  }
+
+  #navegacao-principal {
+    display: block;
+    width: auto;
+  }
+
+  .lista-navegacao {
+    flex-direction: row;
+    align-items: center;
+    margin-top: 0;
+    gap: 0.5rem;
+  }
+
+  .conteudo-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 160px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    padding-left: 0;
+    overflow: hidden;
+  }
+
+  .conteudo-dropdown a {
+    color: #ffffff;
+    padding: 0.8rem 1rem;
+  }
+
+  .item-dropdown:hover .conteudo-dropdown {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  .exibicao-lista .cartao-membro {
+    grid-template-columns: 2fr 0.3fr;
+    align-items: center;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .rodape-conteudo {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  .info-desenvolvimento {
+    text-align: right;
+  }
+}

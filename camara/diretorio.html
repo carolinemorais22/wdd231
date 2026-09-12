@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diretório de Membros | Câmara de Comércio</title>
+  <meta name="description" content="Diretório de empresas e membros associados à Câmara de Comércio local.">
+  <meta name="author" content="Caroline Marques Morais">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Diretório de Membros | Câmara de Comércio">
+  <meta property="og:description" content="Explore o diretório de empresas associadas e conecte-se com fornecedores e parceiros locais.">
+  <meta property="og:image" content="https://carolinemorais22.github.io/wdd231/camara/imagens/github.svg">
+  <meta property="og:url" content="https://carolinemorais22.github.io/wdd231/camara/diretorio.html">
+
+    <link rel="preload" as="image" href="imagens/favicon.png">
+
+  <link rel="stylesheet" href="css/normalizar.css">
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="css/desktop.css">
+  <script src="dados/diretorio.js" defer></script>
+  <script src="dados/membros.json" defer></script>
+</head>
+<body>
+
+  <header class="cabecalho-principal">
+    <div class="cabecalho-conteudo">
+      <div class="logotipo-container">
+        <img src="imagens/favicon.png" alt="Logotipo da Câmara de Comércio" class="logotipo-img">
+        <div class="titulos-camara">
+          <span class="titulo-site">Câmara de Comércio</span>
+        </div>
+      </div>
+      
+      <button id="botao-menu" aria-label="Abrir Menu de Navegação">
+        <span class="icone-hamburguer"></span>
+      </button>
+
+      <nav id="navegacao-principal">
+        <ul class="lista-navegacao">
+          <li><a href="#">Início</a></li>
+          <li><a href="diretorio.html" class="ativo">Diretório</a></li>
+          <li><a href="#">Associar-se</a></li>
+          <li class="item-dropdown">
+            <button class="botao-dropdown" aria-haspopup="true" aria-expanded="false">
+              Descobrir <span class="seta-dropdown">▼</span>
+            </button>
+            <ul class="conteudo-dropdown">
+              <li><a href="#">Sobre</a></li>
+              <li><a href="#">Eventos</a></li>
+              <li><a href="#">Podcast</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+      <button id="botao-tema" aria-label="Alternar Modo Escuro">
+        🌙
+      </button>
+    </div>
+  </header>
+
+  <main id="conteudo-principal">
+    <section class="secao-cabecalho-diretorio">
+      <h1>Diretório de Empresas</h1>
+      <div class="controles-visualizacao">
+        <button id="botao-grade" class="ativo" aria-label="Exibir em Grade">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M4 4h4v4H4V4zm6 0h4v4h-4V4zm6 0h4v4h-4V4zM4 10h4v4H4v-4zm6 0h4v4h-4v-4zm6 0h4v4h-4v-4zM4 16h4v4H4v-4zm6 0h4v4h-4v-4zm6 0h4v4h-4v-4z"/>
+          </svg>
+        </button>
+        <button id="botao-lista" aria-label="Exibir em Lista">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M4 6h16v2H4V6zm0 5h16v2H4v-2zm0 5h16v2H4v-2z"/>
+          </svg>
+        </button>
+      </div>
+    </section>
+
+    <div id="container-membros" class="exibicao-grade"></div>
+  </main>
+
+  <footer class="rodape-principal">
+    <div class="rodape-conteudo">
+      <div class="info-contato">
+        <p><strong>Câmara de Comércio</strong></p>
+        <p>Rua Principal, 100 - Centro</p>
+        <p>contato@camaradecomercio.org.br</p>
+        <p>(67) 3333-4444</p>
+      </div>
+       <div class="faixa-redes-sociais">
+            <div class="redes-sociais">
+                <a href="https://github.com" target="_blank" aria-label="GitHub">
+                    <img src="imagens/github.svg" alt="GitHub">
+                </a>
+                <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                    <img src="imagens/instagram.svg" alt="Instagram">
+                </a>
+            </div>
+        </div>
+      <div class="info-desenvolvimento">
+        <p>Desenvolvido por Caroline Marques Morais</p>
+        <p>&copy; <span id="ano-atual"></span> | Câmara de Comércio</p>
+        <p id="ultima-modificacao"></p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

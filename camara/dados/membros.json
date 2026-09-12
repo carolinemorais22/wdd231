@@ -1,0 +1,83 @@
+[
+  {
+    "nome": "Colégio Novo Século",
+    "endereco": "Av. Bandeirantes, 2855 - Jardim Jacy, Campo Grande - MS, 79005-670",
+    "telefone": "(67) 3222-9992",
+    "site": "https://colegionovoseculo.com.br",
+    "imagem": "novo-seculo.png",
+    "nivelAssociacao":1,
+    "descricao": "Instituição de ensino com excelência acadêmica e formação integral."
+  },
+  {
+    "nome": "Hospital Cassems Campo Grande",
+    "endereco": "Av. Mato Grosso, 5151 - Vivendas do Parque, Campo Grande - MS, 79031-000",
+    "telefone": "(67) 3323-0300",
+    "site": "https://www.cassems.com.br",
+    "imagem": "cassems.webp",
+    "nivelAssociacao": 3,
+    "descricao": "Complexo hospitalar de referência e assistência à saúde."
+  },
+  {
+    "nome": "Supermercados Comper (Jardim dos Estados)",
+    "endereco": "Rua Ceará, 1553 - Santa Fé, Campo Grande - MS, 79021-000",
+    "telefone": "(67) 3304-7908",
+    "site": "https://www.comper.com.br",
+    "imagem": "comper.webp",
+    "nivelAssociacao": 2,
+    "descricao": "Rede de supermercados e hipermercados regional."
+  },
+  {
+    "nome": "Energisa Mato Grosso do Sul",
+    "endereco": "Av. Calógeras, 3165 - Centro, Campo Grande - MS, 79002-003",
+    "telefone": "0800 722 7272",
+    "site": "https://www.energisa.com.br",
+    "imagem": "energisa.webp",
+    "nivelAssociacao": 3,
+    "descricao": "Distribuidora e concessionária de energia elétrica do estado."
+  },
+  {
+    "nome": "Sanesul (Empresa de Saneamento de MS)",
+    "endereco": "Rua Euclides da Cunha, 975 - Jardim dos Estados, Campo Grande - MS, 79002-100",
+    "telefone": "0800 067 6010",
+    "site": "https://www.sanesul.ms.gov.br",
+    "imagem": "sanesul.webp",
+    "nivelAssociacao": 3,
+    "descricao": "Empresa de saneamento básico e abastecimento de água do estado."
+  },
+  {
+    "nome": "Unimed Campo Grande",
+    "endereco": "Rua Bento Gonçalves, 1329 - Brilhante, Campo Grande - MS, 79006-800",
+    "telefone": "(67) 3389-2500",
+    "site": "https://www.unimedcg.coop.br",
+    "imagem": "unimed-cg.png",
+    "nivelAssociacao": 3,
+    "descricao": "Cooperativa médica e prestadora de serviços de saúde suplementar."
+  },
+  {
+    "nome": "Sesc Mato Grosso do Sul",
+    "endereco": "Rua 25 de Dezembro, 2080 - Centro, Campo Grande - MS, 79010-220",
+    "telefone": "(67) 3311-4300",
+    "site": "https://sesc.ms",
+    "imagem": "sesc-ms.png",
+    "nivelAssociacao": 2,
+    "descricao": "Instituição promove saúde, educação, cultura, lazer e assistência social."
+  },
+  {
+    "nome": "Livromat Livraria e Papelaria",
+    "endereco": "Av. Calógeras, 2411 - Centro, Campo Grande - MS, 79002-002",
+    "telefone": "(67) 99649-4276",
+    "site": "https://www.livromat.com.br",
+    "imagem": "livromat.png",
+    "nivelAssociacao": 1,
+    "descricao": "Livraria, papelaria e materiais escolares em geral."
+  },
+  {
+    "nome": "Anita Calçados",
+    "endereco": "Rua 14 de Julho, 2125 - Centro, Campo Grande - MS, 79002-330",
+    "telefone": "(67) 3322-6000",
+    "site": "https://www.anita.com.br",
+    "imagem": "anita.svg",
+    "nivelAssociacao": 2,
+    "descricao": "Uma das maiores e mais tradicionais redes de lojas de calçados e acessórios do Centro-Oeste."
+  }
+]
