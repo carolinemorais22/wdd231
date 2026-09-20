@@ -3,19 +3,23 @@
    ================== */
 
 @media (min-width: 768px) {
+
   #botao-menu {
     display: none;
   }
 
-  #navegacao-principal {
-    display: block;
+ #navegacao-principal {
+    display: block !important;
+    position: static;
     width: auto;
+    background-color: transparent;
+    padding: 0;
+    box-shadow: none;
   }
 
   .lista-navegacao {
     flex-direction: row;
     align-items: center;
-    margin-top: 0;
     gap: 0.5rem;
   }
 
@@ -40,12 +44,32 @@
   }
 }
 
-@media (min-width: 768px) {
-  .exibicao-lista .cartao-membro {
-    grid-template-columns: 2fr 0.3fr;
-    align-items: center;
+  @media (min-width: 768px) {
+    .exibicao-lista .cartao-membro {
+      grid-template-columns: 2fr 0.3fr;
+      align-items: center;
+    }
+
+    .imagem-hero {
+    height: 500px;
   }
-}
+  
+    .caixa-cta p {
+    display: block;
+  }
+  .grade-informacoes-inicio,
+  .grade-destaques {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    align-items: stretch;
+  }
+   .conteudo-destaque {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  }
 
 
 @media (min-width: 768px) {

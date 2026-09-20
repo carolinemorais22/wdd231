@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   async function obterDadosMembros() {
     try {
-      const resposta = await fetch("dados/membros.json");
+      const resposta = await fetch("scripts/membros.json");
       if (!resposta.ok) {
         throw new Error(`Erro ao carregar JSON: ${resposta.status}`);
       }
@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
     switch (nivel) {
       case 3: return "Membro Ouro";
       case 2: return "Membro Prata";
-      default: return "Membro";
+      default: return "Membro Bronze";
     }
   }
 

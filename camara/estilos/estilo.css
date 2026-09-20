@@ -2,6 +2,7 @@
    Variáveis CSS
    =================== */
 :root {
+  /* Cores Principais e Neutras */
   --cor-primaria: #003049;
   --cor-secundaria: #669BBC;
   --cor-fundo-pagina: #f4f6f9;
@@ -10,9 +11,19 @@
   --cor-texto-suave: #4a4a4a;
   --cor-borda: #dcdcdc;
   --cor-zebra: #eef6fb;
+
+  /* Cores de Destaque e Níveis */
   --cor-ouro: #d4af37;
-  --cor-prata: #708090;
-  --cor-membro: #4682b4;
+  --cor-prata: #70808f;
+  --cor-membro: #905002;
+
+  /* Padronização de Branco, Preto e Transparências */
+  --cor-branca: #ffffff;
+  --cor-preta: #000000;
+  --cor-hover-transparente: rgba(255, 255, 255, 0.2);
+  --cor-sombra-suave: rgba(0, 0, 0, 0.2);
+
+  /* Tipografia e Sombras */
   --fonte-principal: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   --sombra-cartao: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
@@ -27,7 +38,6 @@
   --cor-zebra: #282828;
   --sombra-cartao: 0 4px 12px rgba(0, 0, 0, 0.5);
 }
-
 
 * {
   box-sizing: border-box;
@@ -49,8 +59,9 @@ body {
    ================== */
 .cabecalho-principal {
   background-color: var(--cor-primaria);
-  color: #ffffff;
+  color: var(--cor-branca);
   padding: 0.8rem 1rem;
+  position: relative;
 }
 
 .cabecalho-conteudo {
@@ -59,29 +70,44 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 1rem;
+  flex-wrap: nowrap; 
+  gap: 0.5rem;
+  position: relative;
 }
 
 .logotipo-container {
   display: flex;
   align-items: center;
-  gap: 0.8rem;
+  gap: 0.5rem;
+  min-width: 0; 
+  flex: 1;
 }
 
 .logotipo-img {
-  width: 70px;
-  height: 70px;
+  width: 40px;
+  height: 40px;
   object-fit: contain;
+  flex-shrink: 0;
 }
 
 .titulo-site {
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.acoes-cabecalho {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-shrink: 0;
 }
 
 #botao-tema {
-  background: #000000;
+  background: var(--cor-preta);
+  color: var(--cor-branca);
   border: none;
   border-radius: 50%;
   width: 36px;
@@ -91,13 +117,13 @@ body {
   justify-content: center;
   cursor: pointer;
   font-size: 1.2rem;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 5px var(--cor-sombra-suave);
 }
 
 #botao-menu {
   background: none;
-  border: 2px solid #ffffff;
-  color: #ffffff;
+  border: 2px solid var(--cor-branca);
+  color: var(--cor-branca);
   font-size: 1.5rem;
   padding: 0.2rem 0.6rem;
   cursor: pointer;
@@ -114,7 +140,14 @@ body {
 
 #navegacao-principal {
   display: none;
+  position: absolute;
+  top: 100%; /* Aparece exatamente abaixo do cabeçalho */
+  left: 0;
   width: 100%;
+  background-color: var(--cor-primaria); /* Mantém o fundo azul escuro */
+  z-index: 1000; /* Fica acima dos outros conteúdos */
+  padding: 1rem 0;
+  box-shadow: 0 4px 10px var(--cor-sombra-suave);
 }
 
 #navegacao-principal.aberto {
@@ -126,12 +159,13 @@ body {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  margin-top: 1rem;
+  margin-top: 0;
+  padding: 0 1rem;
 }
 
 .lista-navegacao a,
 .botao-dropdown {
-  color: #ffffff;
+  color: var(--cor-branca);
   text-decoration: none;
   padding: 0.6rem 1rem;
   display: block;
@@ -146,15 +180,15 @@ body {
 
 .lista-navegacao a:hover,
 .botao-dropdown:hover {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: var(--cor-hover-transparente);
 }
 
 .lista-navegacao a.ativo {
-  background-color: #ffffff;
+  background-color: var(--cor-branca);
   color: var(--cor-primaria);
   font-weight: bold;
+  display: block; /* Mantém o formato organizado do botão */
 }
-
 
 .item-dropdown {
   position: relative;
@@ -171,10 +205,9 @@ body {
   display: block;
 }
 
-
-/* ===========================
-   Conteúdo Principal
-   =========================== */
+/* ==========================================
+   Conteúdo Principal - DIRETÓRIO
+   ========================================== */
 #conteudo-principal {
   max-width: 1200px;
   margin: 2rem auto;
@@ -211,7 +244,7 @@ body {
 .controles-visualizacao button.ativo,
 .controles-visualizacao button:hover {
   background-color: var(--cor-secundaria);
-  color: #ffffff;
+  color: var(--cor-branca);
 }
 
 /* Cartões */
@@ -272,17 +305,17 @@ body {
 
 .nivel-1 {
   background-color: var(--cor-membro);
-  color: #fff;
+  color: var(--cor-branca);
 }
 
 .nivel-2 {
   background-color: var(--cor-prata);
-  color: #fff;
+  color: var(--cor-branca);
 }
 
 .nivel-3 {
   background-color: var(--cor-ouro);
-  color: #000;
+  color: var(--cor-preta);
 }
 
 /* Lista */
@@ -323,7 +356,7 @@ body {
    ================ */
 .rodape-principal {
   background-color: var(--cor-primaria);
-  color: #ffffff;
+  color: var(--cor-branca);
   padding: 2rem 1rem;
   margin-top: 3rem;
 }
@@ -338,19 +371,217 @@ body {
 }
 
 .faixa-redes-sociais {
-    padding: 15px 0;
+  padding: 15px 0;
 }
 
 .redes-sociais {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
 .redes-sociais a img {
-    width: 50px;
-    height: 50px;
-    display: block;
-    filter: invert(100%);
+  width: 50px;
+  height: 50px;
+  display: block;
+  filter: invert(100%);
+}
+
+/* ==========================================
+   Conteúdo Principal - PÁGINA INICIAL
+   ========================================== */
+
+#conteudo-principal {
+  max-width: 1200px;
+  margin: 1.5rem auto;
+  padding: 0 1rem;
+}
+
+.secao-hero {
+  position: relative;
+  width: 100%;
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: var(--sombra-padrao);
+}
+
+.imagem-hero {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.caixa-cta {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  background-color: #000000bf;
+  color: #ffffff;
+  padding: 0.8rem 1.2rem;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.caixa-cta p {
+  display: none;
+  font-size: 0.85rem;
+  margin-bottom: 0.3rem;
+}
+
+.botao-cta {
+  display: inline-block;
+  background-color: #ffffff;
+  color: #000000;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.botao-cta:hover, .botao-cta:focus {
+  background-color: var(--cor-linha-divisoria);
+}
+
+.titulo-boas-vindas {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: var(--cor-primaria);
+}
+
+.grade-informacoes-inicio {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.cartao-info {
+  background-color: var(--cor-fundo-painel);
+  border: 1px solid var(--cor-linha-divisoria);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--sombra-padrao);
+
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.cabecalho-cartao {
+  background-color: var(--cor-primaria);
+  color: #ffffff;
+  padding: 0.6rem 1rem;
+}
+
+.cabecalho-cartao h2 {
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+
+.corpo-cartao {
+  padding: 1rem;
+  background-color: var(--cor-fundo-cartao);
+  border: 1px solid var(--cor-borda);
+  border-radius: 2px;
+  flex: 1;
+}
+
+.corpo-cartao ul {
+  list-style-type: square;
+  padding-left: 1.2rem;
+}
+
+.corpo-cartao li {
+  margin-bottom: 0.5rem;
+}
+
+.container-clima-detalhes {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.icone-clima {
+  width: 60px;
+  height: 60px;
+}
+
+.temp-destaque {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.descricao-clima {
+  text-transform: capitalize;
+  font-weight: bold;
+  margin-bottom: 0.4rem;
+}
+
+.secao-destaques {
+  margin-top: 2rem;
+}
+
+.secao-destaques h2 {
+  font-size: 1.5rem;
+  color: var(--cor-primaria);
+  margin-bottom: 1rem;
+}
+
+.grade-destaques {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.cartao-destaque {
+  background-color: var(--cor-fundo-cartao);
+  border: 1px solid var(--cor-borda);
+  border-radius: 8px;
+  padding: 1.2rem;
+}
+
+.cabecalho-destaque {
+  border-bottom: 1px solid #aaaaaa;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.cabecalho-destaque h3 {
+  font-size: 1.2rem;
+  color: #000000;
+}
+
+.conteudo-destaque {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.logo-destaque {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.info-destaque p {
+  font-size: 0.9rem;
+  margin-bottom: 0.3rem;
+}
+
+.cartao-destaque a,
+.cartao-membro a {
+  color: var(--cor-link);
+  text-decoration: underline;
+  word-break: break-all;
+}
+
+.cartao-destaque a:hover,
+.cartao-membro a:hover,
+.cartao-destaque a:focus,
+.cartao-membro a:focus {
+  color: var(--cor-link-hover);
 }
