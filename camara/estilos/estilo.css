@@ -7,15 +7,19 @@
   --cor-secundaria: #669BBC;
   --cor-fundo-pagina: #f4f6f9;
   --cor-fundo-cartao: #ffffff;
+  --cor-fundo-painel: #ffffff;
   --cor-texto: #1a1a1a;
   --cor-texto-suave: #4a4a4a;
   --cor-borda: #dcdcdc;
+  --cor-linha-divisoria: #dcdcdc;
   --cor-zebra: #eef6fb;
 
   /* Cores de Destaque e Níveis */
   --cor-ouro: #d4af37;
   --cor-prata: #70808f;
   --cor-membro: #905002;
+  --cor-link: #669BBC;
+  --cor-link-hover: #003049;
 
   /* Padronização de Branco, Preto e Transparências */
   --cor-branca: #ffffff;
@@ -26,17 +30,21 @@
   /* Tipografia e Sombras */
   --fonte-principal: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   --sombra-cartao: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --sombra-padrao: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 /* Suporte ao Modo Escuro */
 .modo-escuro {
   --cor-fundo-pagina: #121212;
   --cor-fundo-cartao: #1e1e1e;
+  --cor-fundo-painel: #1e1e1e;
   --cor-texto: #e0e0e0;
   --cor-texto-suave: #a0a0a0;
   --cor-borda: #333333;
+  --cor-linha-divisoria: #333333;
   --cor-zebra: #282828;
   --sombra-cartao: 0 4px 12px rgba(0, 0, 0, 0.5);
+  --sombra-padrao: 0 4px 12px rgba(0, 0, 0, 0.5);
 }
 
 * {
@@ -55,7 +63,7 @@ body {
 }
 
 /* ==================
-   Menu
+   Menu & Cabeçalho
    ================== */
 .cabecalho-principal {
   background-color: var(--cor-primaria);
@@ -206,14 +214,15 @@ body {
 }
 
 /* ==========================================
-   Conteúdo Principal - DIRETÓRIO
+   Estrutura do Conteúdo Principal (Consolidado)
    ========================================== */
 #conteudo-principal {
   max-width: 1200px;
-  margin: 2rem auto;
+  margin: 1.5rem auto;
   padding: 0 1rem;
 }
 
+/* --- Diretório --- */
 .secao-cabecalho-diretorio {
   display: flex;
   justify-content: space-between;
@@ -247,7 +256,7 @@ body {
   color: var(--cor-branca);
 }
 
-/* Cartões */
+/* Cartões de Membros (Grade) */
 .exibicao-grade {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -318,7 +327,7 @@ body {
   color: var(--cor-preta);
 }
 
-/* Lista */
+/* Cartões de Membros (Lista) */
 .exibicao-lista {
   display: flex;
   flex-direction: column;
@@ -351,53 +360,7 @@ body {
   text-decoration: underline;
 }
 
-/* ================
-   Rodapé
-   ================ */
-.rodape-principal {
-  background-color: var(--cor-primaria);
-  color: var(--cor-branca);
-  padding: 2rem 1rem;
-  margin-top: 3rem;
-}
-
-.rodape-conteudo {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  text-align: center;
-}
-
-.faixa-redes-sociais {
-  padding: 15px 0;
-}
-
-.redes-sociais {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
-
-.redes-sociais a img {
-  width: 50px;
-  height: 50px;
-  display: block;
-  filter: invert(100%);
-}
-
-/* ==========================================
-   Conteúdo Principal - PÁGINA INICIAL
-   ========================================== */
-
-#conteudo-principal {
-  max-width: 1200px;
-  margin: 1.5rem auto;
-  padding: 0 1rem;
-}
-
+/* --- Página Inicial --- */
 .secao-hero {
   position: relative;
   width: 100%;
@@ -417,8 +380,8 @@ body {
   position: absolute;
   bottom: 15px;
   right: 15px;
-  background-color: #000000bf;
-  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.75);
+  color: var(--cor-branca);
   padding: 0.8rem 1.2rem;
   border-radius: 6px;
   text-align: center;
@@ -432,8 +395,8 @@ body {
 
 .botao-cta {
   display: inline-block;
-  background-color: #ffffff;
-  color: #000000;
+  background-color: var(--cor-branca);
+  color: var(--cor-preta);
   padding: 0.5rem 1rem;
   font-weight: bold;
   text-decoration: none;
@@ -463,7 +426,6 @@ body {
   border-radius: 8px;
   overflow: hidden;
   box-shadow: var(--sombra-padrao);
-
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -471,7 +433,7 @@ body {
 
 .cabecalho-cartao {
   background-color: var(--cor-primaria);
-  color: #ffffff;
+  color: var(--cor-branca);
   padding: 0.6rem 1rem;
 }
 
@@ -551,7 +513,7 @@ body {
 
 .cabecalho-destaque h3 {
   font-size: 1.2rem;
-  color: #000000;
+  color: var(--cor-texto);
 }
 
 .conteudo-destaque {
@@ -584,4 +546,41 @@ body {
 .cartao-destaque a:focus,
 .cartao-membro a:focus {
   color: var(--cor-link-hover);
+}
+
+/* ================
+   Rodapé
+   ================ */
+.rodape-principal {
+  background-color: var(--cor-primaria);
+  color: var(--cor-branca);
+  padding: 2rem 1rem;
+  margin-top: 3rem;
+}
+
+.rodape-conteudo {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  text-align: center;
+}
+
+.faixa-redes-sociais {
+  padding: 15px 0;
+}
+
+.redes-sociais {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.redes-sociais a img {
+  width: 50px;
+  height: 50px;
+  display: block;
+  filter: invert(100%);
 }
