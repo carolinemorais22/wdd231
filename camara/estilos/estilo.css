@@ -141,11 +141,11 @@ body {
 #navegacao-principal {
   display: none;
   position: absolute;
-  top: 100%; /* Aparece exatamente abaixo do cabeçalho */
+  top: 100%; 
   left: 0;
   width: 100%;
-  background-color: var(--cor-primaria); /* Mantém o fundo azul escuro */
-  z-index: 1000; /* Fica acima dos outros conteúdos */
+  background-color: var(--cor-primaria);
+  z-index: 1000;
   padding: 1rem 0;
   box-shadow: 0 4px 10px var(--cor-sombra-suave);
 }
@@ -187,7 +187,7 @@ body {
   background-color: var(--cor-branca);
   color: var(--cor-primaria);
   font-weight: bold;
-  display: block; /* Mantém o formato organizado do botão */
+  display: block;
 }
 
 .item-dropdown {
