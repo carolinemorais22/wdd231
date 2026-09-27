@@ -21,21 +21,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // -----------------------------------------------------
-  // Modo Escuro / Claro
-  // -----------------------------------------------------
-
-  const botaoTema = document.getElementById("botao-tema");
-
-  botaoTema.addEventListener("click", () => {
-    document.body.classList.toggle("modo-escuro");
-    if (document.body.classList.contains("modo-escuro")) {
-      botaoTema.textContent = "☀️";
-    } else {
-      botaoTema.textContent = "🌙";
-    }
-  });
-
-  // -----------------------------------------------------
   // Fetch (Async/Await)
   // -----------------------------------------------------
 
