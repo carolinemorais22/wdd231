@@ -1,27 +1,35 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Associe-se à Câmara | Câmara de Comércio de Campo Grande</title>
-  <meta name="description" content="Associe sua empresa à Câmara de Comércio de Campo Grande. Escolha entre os níveis de associação NP, Bronze, Prata e Ouro.">
-  <meta name="author" content="Caroline Morais Cardoso">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Associe-se à Câmara | Câmara de Comércio de Campo Grande</title>
+    <meta name="description"
+        content="Associe sua empresa à Câmara de Comércio de Campo Grande. Escolha entre os níveis de associação NP, Bronze, Prata e Ouro.">
+    <meta name="author" content="Caroline Morais Cardoso">
 
-  <!-- Open Graph -->
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Associe-se | Câmara de Comércio de Campo Grande">
-  <meta property="og:description" content="Impulsione seu negócio e conecte-se a parceiros locais em Campo Grande.">
-  <meta property="og:image" content="https://carolinemoraisc.github.io/wdd231/camara/imagens/og-imagem.jpg">
-  <meta property="og:url" content="https://carolinemoraisc.github.io/wdd231/camara/associacao.html">
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Página Inicial | Câmara de Comércio">
+    <meta property="og:description"
+        content="Conheça quem faz a economia local acontecer. Descubra parceiros estratégicos, fortaleça sua rede e impulsione novos negócios em Campo Grande.">
+    <meta property="og:image" content="https://carolinemorais22.github.io/wdd231/camara/imagens/github.svg">
+    <meta property="og:url" content="https://carolinemorais22.github.io/wdd231/camara/index.html">
 
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="estilos/normalizar.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="estilos/normalizar.css">
     <link rel="stylesheet" href="estilos/estilo.css">
     <link rel="stylesheet" href="estilos/desktop.css">
-  <script src="scripts/associacao.js" defer></script>
+    <script src="scripts/associacao.js" defer></script>
 </head>
+
 <body>
-  <header class="cabecalho-principal">
+    <header class="cabecalho-principal">
         <div class="cabecalho-conteudo">
             <div class="logotipo-container">
                 <img src="imagens/favicon.webp" alt="Logotipo da Câmara de Comércio" class="logotipo-img">
@@ -53,153 +61,161 @@
         </div>
     </header>
 
-  <main class="join-container">
-    <h1>Associe-se à Câmara de Comércio</h1>
-    <p class="subtitle">Preencha o formulário para fazer parte da maior rede de negócios de Campo Grande.</p>
+    <main class="join-container">
+        <h1>Associe-se à Câmara de Comércio</h1>
+        <p class="subtitle">Preencha o formulário para fazer parte da maior rede de negócios de Campo Grande.</p>
 
-    <div class="join-layout">
-      <form method="get" action="agradecimento.html" class="join-form">
-        
-        <label title="Nome do candidato">
-          Nome *
-          <input type="text" name="nome" id="nome" required autocomplete="given-name" title="Digite seu primeiro nome">
-        </label>
+        <div class="join-layout">
+            <form method="get" action="agradecimento.html" class="join-form">
 
-        <label title="Sobrenome do candidato">
-          Sobrenome *
-          <input type="text" name="sobrenome" id="sobrenome" required autocomplete="family-name" title="Digite seu sobrenome">
-        </label>
+                <label title="Nome do candidato">
+                    Nome *
+                    <input type="text" name="nome" id="nome" required autocomplete="given-name"
+                        title="Digite seu primeiro nome">
+                </label>
 
-        <label title="Cargo na organização">
-          Cargo na Organização
-          <input type="text" name="cargo" id="cargo" autocomplete="organization-title" pattern="[A-Za-zÀ-ÿ\s\-]{7,}" title="Apenas letras, hífens e espaços com pelo menos 7 caracteres">
-        </label>
+                <label title="Sobrenome do candidato">
+                    Sobrenome *
+                    <input type="text" name="sobrenome" id="sobrenome" required autocomplete="family-name"
+                        title="Digite seu sobrenome">
+                </label>
 
-        <label title="Endereço de e-mail">
-          E-mail *
-          <input type="email" name="email" id="email" required autocomplete="email" placeholder="exemplo@empresa.com.br" title="Digite um endereço de e-mail válido">
-        </label>
+                <label title="Cargo na organização">
+                    Cargo na Organização
+                    <input type="text" name="cargo" id="cargo" autocomplete="organization-title"
+                        pattern="[A-Za-zÀ-ÿ\s\-]{7,}"
+                        title="Apenas letras, hífens e espaços com pelo menos 7 caracteres">
+                </label>
 
-        <label title="Número de telefone móvel">
-          Telefone Celular *
-          <input type="tel" name="telefone" id="telefone" required autocomplete="tel" title="Digite seu telefone com DDD">
-        </label>
+                <label title="Endereço de e-mail">
+                    E-mail *
+                    <input type="email" name="email" id="email" required autocomplete="email"
+                        placeholder="exemplo@empresa.com.br" title="Digite um endereço de e-mail válido">
+                </label>
 
-        <label title="Nome da empresa ou organização">
-          Nome da Empresa / Organização *
-          <input type="text" name="organizacao" id="organizacao" required autocomplete="organization" title="Digite o nome da sua empresa">
-        </label>
+                <label title="Número de telefone móvel">
+                    Telefone Celular *
+                    <input type="tel" name="telefone" id="telefone" required autocomplete="tel"
+                        title="Digite seu telefone com DDD">
+                </label>
 
-        <fieldset class="membership-selection">
-          <legend>Nível de Associação *</legend>
-          <label class="radio-label">
-            <input type="radio" name="nivel" value="np" required> NP (Sem fins lucrativos)
-          </label>
-          <label class="radio-label">
-            <input type="radio" name="nivel" value="bronze"> Bronze
-          </label>
-          <label class="radio-label">
-            <input type="radio" name="nivel" value="silver"> Prata
-          </label>
-          <label class="radio-label">
-            <input type="radio" name="nivel" value="gold"> Ouro
-          </label>
-        </fieldset>
+                <label title="Nome da empresa ou organização">
+                    Nome da Empresa / Organização *
+                    <input type="text" name="organizacao" id="organizacao" required autocomplete="organization"
+                        title="Digite o nome da sua empresa">
+                </label>
 
-        <label title="Descrição da empresa ou organização">
-          Descrição da Organização
-          <textarea name="descricao" id="descricao" rows="4" title="Escreva um resumo das atividades da empresa"></textarea>
-        </label>
+                <fieldset class="membership-selection">
+                    <legend>Nível de Associação *</legend>
+                    <label class="radio-label">
+                        <input type="radio" name="nivel" value="np" required> NP (Sem fins lucrativos)
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="nivel" value="bronze"> Bronze
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="nivel" value="silver"> Prata
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="nivel" value="gold"> Ouro
+                    </label>
+                </fieldset>
 
-        <input type="hidden" name="timestamp" id="timestamp">
+                <label title="Descrição da empresa ou organização">
+                    Descrição da Organização
+                    <textarea name="descricao" id="descricao" rows="4"
+                        title="Escreva um resumo das atividades da empresa"></textarea>
+                </label>
 
-        <input type="submit" value="Enviar Candidatura" class="btn-submit">
-      </form>
+                <input type="hidden" name="timestamp" id="timestamp">
 
-      <aside class="membership-cards">
-        <h2>Níveis de Associação</h2>
+                <input type="submit" value="Enviar Candidatura" class="btn-submit">
+            </form>
 
-        <div class="card-level card-fade-in" style="animation-delay: 0.1s;">
-          <h3>NP</h3>
-          <p>Para organizações sem fins lucrativos.</p>
-          <button type="button" class="btn-modal" data-modal="modal-np">Ver Benefícios</button>
+            <aside class="membership-cards">
+                <h2>Níveis de Associação</h2>
+
+                <div class="card-level card-fade-in level-np">
+                    <h3>Associação NP</h3>
+                    <p>Para organizações sem fins lucrativos.</p>
+                    <button type="button" class="btn-modal" data-modal="modal-np">Ver Benefícios</button>
+                </div>
+
+                <div class="card-level card-fade-in level-bronze">
+                    <h3>Associação Bronze</h3>
+                    <p>Ideal para microempresas e startups.</p>
+                    <button type="button" class="btn-modal" data-modal="modal-bronze">Ver Benefícios</button>
+                </div>
+
+                <div class="card-level card-fade-in level-silver">
+                    <h3>Associação Prata</h3>
+                    <p>Para empresas em expansão regional.</p>
+                    <button type="button" class="btn-modal" data-modal="modal-silver">Ver Benefícios</button>
+                </div>
+
+                <div class="card-level card-fade-in level-gold">
+                    <h3>Associação Ouro</h3>
+                    <p>Máxima visibilidade e vantagens exclusivas.</p>
+                    <button type="button" class="btn-modal" data-modal="modal-gold">Ver Benefícios</button>
+                </div>
+            </aside>
         </div>
+    </main>
 
-        <div class="card-level card-fade-in" style="animation-delay: 0.3s;">
-          <h3>Bronze</h3>
-          <p>Ideal para microempresas e startups.</p>
-          <button type="button" class="btn-modal" data-modal="modal-bronze">Ver Benefícios</button>
+    <dialog id="modal-np">
+        <div class="modal-content">
+            <h3>Benefícios - Associação NP</h3>
+            <p>Isenção de anuidade para ONGs registradas em Campo Grande.</p>
+            <ul>
+                <li>Acesso ao diretório de membros</li>
+                <li>Participação em fóruns comunitários</li>
+                <li>Divulgação de eventos beneficentes</li>
+            </ul>
+            <button class="btn-close-modal">Fechar</button>
         </div>
+    </dialog>
 
-        <div class="card-level card-fade-in" style="animation-delay: 0.5s;">
-          <h3>Prata</h3>
-          <p>Para empresas em expansão regional.</p>
-          <button type="button" class="btn-modal" data-modal="modal-silver">Ver Benefícios</button>
+    <dialog id="modal-bronze">
+        <div class="modal-content">
+            <h3>Benefícios - Associação Bronze</h3>
+            <p>Entrada acessível no ecossistema de negócios locais.</p>
+            <ul>
+                <li>Perfil completo no diretório de membros</li>
+                <li>Desconto de 10% em eventos de networking</li>
+                <li>Inclusão na newsletter mensal da câmara</li>
+            </ul>
+            <button class="btn-close-modal">Fechar</button>
         </div>
+    </dialog>
 
-        <div class="card-level card-fade-in" style="animation-delay: 0.7s;">
-          <h3>Ouro</h3>
-          <p>Máxima visibilidade e vantagens exclusivas.</p>
-          <button type="button" class="btn-modal" data-modal="modal-gold">Ver Benefícios</button>
+    <dialog id="modal-silver">
+        <div class="modal-content">
+            <h3>Benefícios - Associação Prata</h3>
+            <p>Amplie a visibilidade da sua marca no estado.</p>
+            <ul>
+                <li>Todos os benefícios do plano Bronze</li>
+                <li>Destaque rotativo na página principal</li>
+                <li>Desconto de 25% em treinamentos e workshops</li>
+            </ul>
+            <button class="btn-close-modal">Fechar</button>
         </div>
-      </aside>
-    </div>
-  </main>
+    </dialog>
 
-  <dialog id="modal-np">
-    <div class="modal-content">
-      <h3>Benefícios - Associação NP</h3>
-      <p>Isenção de anuidade para ONGs registradas em Campo Grande.</p>
-      <ul>
-        <li>Acesso ao diretório de membros</li>
-        <li>Participação em fóruns comunitários</li>
-        <li>Divulgação de eventos beneficentes</li>
-      </ul>
-      <button class="btn-close-modal">Fechar</button>
-    </div>
-  </dialog>
+    <dialog id="modal-gold">
+        <div class="modal-content">
+            <h3>Benefícios - Associação Ouro</h3>
+            <p>Liderança e presença de destaque prioritário.</p>
+            <ul>
+                <li>Todos os benefícios dos planos anteriores</li>
+                <li>Logotipo permanente em destaque na home</li>
+                <li>Acesso VIP a rodadas de negócios executivas</li>
+                <li>Ingressos gratuitos para a convenção anual</li>
+            </ul>
+            <button class="btn-close-modal">Fechar</button>
+        </div>
+    </dialog>
 
-  <dialog id="modal-bronze">
-    <div class="modal-content">
-      <h3>Benefícios - Associação Bronze</h3>
-      <p>Entrada acessível no ecossistema de negócios locais.</p>
-      <ul>
-        <li>Perfil completo no diretório de membros</li>
-        <li>Desconto de 10% em eventos de networking</li>
-        <li>Inclusão na newsletter mensal da câmara</li>
-      </ul>
-      <button class="btn-close-modal">Fechar</button>
-    </div>
-  </dialog>
-
-  <dialog id="modal-silver">
-    <div class="modal-content">
-      <h3>Benefícios - Associação Prata</h3>
-      <p>Amplie a visibilidade da sua marca no estado.</p>
-      <ul>
-        <li>Todos os benefícios do plano Bronze</li>
-        <li>Destaque rotativo na página principal</li>
-        <li>Desconto de 25% em treinamentos e workshops</li>
-      </ul>
-      <button class="btn-close-modal">Fechar</button>
-    </div>
-  </dialog>
-
-  <dialog id="modal-gold">
-    <div class="modal-content">
-      <h3>Benefícios - Associação Ouro</h3>
-      <p>Liderança e presença de destaque prioritário.</p>
-      <ul>
-        <li>Todos os benefícios dos planos anteriores</li>
-        <li>Logotipo permanente em destaque na home</li>
-        <li>Acesso VIP a rodadas de negócios executivas</li>
-        <li>Ingressos gratuitos para a convenção anual</li>
-      </ul>
-      <button class="btn-close-modal">Fechar</button>
-    </div>
-  </dialog>
-
-  <footer class="rodape-principal">
+    <footer class="rodape-principal">
         <div class="rodape-conteudo">
             <div class="info-contato">
                 <p><strong>Câmara de Comércio</strong></p>
@@ -225,4 +241,5 @@
         </div>
     </footer>
 </body>
+
 </html>
