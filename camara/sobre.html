@@ -32,7 +32,7 @@
     <link rel="stylesheet" href="estilos/sobre.css">
     <link rel="stylesheet" href="estilos/desktop.css" media="(min-width: 1025px)">
     <script src="scripts/lugares.mjs" defer></script>
-    <script type="module" src="scripts/sobre.js" defer></script>
+    <script type="module" src="scripts/sobre.js"></script>
 </head>
 
 <body>
@@ -62,7 +62,6 @@
 
 
     <main class="sobre-main">
-        <!-- Seção para exibição da mensagem de visita via localStorage -->
         <div id="visit-message" class="visit-message" aria-live="polite"></div>
 
         <section class="intro-sobre">
@@ -71,9 +70,8 @@
                 para investir, viver e prosperar.</p>
         </section>
 
-        <!-- Contentor dos 8 cartões dispostos via Named Grid Areas -->
         <section class="gallery-grid" id="gallery-grid">
-            <!-- Os 8 cartões serão gerados e injetados via JS (sobre.js) -->
+            <h2 class="sr-only">Locais de Interesse</h2>
         </section>
     </main>
 

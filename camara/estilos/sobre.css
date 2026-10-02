@@ -197,6 +197,7 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
+  min-height: 80vh;
 }
 
 .visit-message {
@@ -250,6 +251,7 @@ body {
   object-fit: cover;
   display: block;
   transition: transform 0.3s ease, filter 0.3s ease;
+  object-fit: cover;
 }
 
 .card-item address {
@@ -294,6 +296,7 @@ body {
 .gallery-grid {
   display: grid;
   gap: 20px;
+  min-height: 800px;
   grid-template-areas:
     "item1"
     "item2"
@@ -341,22 +344,6 @@ body {
   filter: invert(100%);
 }
 
-
-.card-item img {
-  width: 100%;
-  height: auto;
-  aspect-ratio: 3 / 2;
-  object-fit: cover;
-}
-
-.gallery-grid {
-  min-height: 800px;
-}
-
-.sobre-main {
-  min-height: 80vh;
-}
-
 @media (min-width: 641px) {
   .gallery-grid {
     grid-template-areas:
@@ -373,3 +360,13 @@ body {
   }
 }
 
+.sr-only{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
