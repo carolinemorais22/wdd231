@@ -16,7 +16,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  const botaoTema = document.getElementById("botao-tema");
 
 
   const rotuloAno = document.getElementById("ano-atual");

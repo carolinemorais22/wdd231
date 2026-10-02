@@ -33,20 +33,6 @@
   --sombra-padrao: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
-/* Suporte ao Modo Escuro */
-.modo-escuro {
-  --cor-fundo-pagina: #121212;
-  --cor-fundo-cartao: #1e1e1e;
-  --cor-fundo-painel: #1e1e1e;
-  --cor-texto: #e0e0e0;
-  --cor-texto-suave: #a0a0a0;
-  --cor-borda: #333333;
-  --cor-linha-divisoria: #333333;
-  --cor-zebra: #282828;
-  --sombra-cartao: 0 4px 12px rgba(0, 0, 0, 0.5);
-  --sombra-padrao: 0 4px 12px rgba(0, 0, 0, 0.5);
-}
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -576,6 +562,7 @@ body {
   display: block;
   filter: invert(100%);
 }
+
 /* ==================
    Associe-se à Câmara
    ================== */
@@ -830,3 +817,5 @@ dialog::backdrop {
 .membership-cards .card-level:nth-child(5) {
   animation-delay: 0.7s;
 }
+
+
