@@ -1,16 +1,12 @@
-/* ==========================================================================
-   5. Uso do Esquema de Cores & 6. Tipografia no Próprio Documento
-   ========================================================================== */
-
 :root {
     /* Paleta de Cores do Projeto */
-    --primary-color: #D9534F;    /* Vermelho Terracota */
-    --secondary-color: #5CB85C;  /* Verde Oliva */
-    --dark-color: #222222;       /* Grafite Escuro */
-    --light-color: #F9F9F9;      /* Off-White */
+    --primary-color: #D9534F;    
+    --secondary-color: #5CB85C;  
+    --dark-color: #222222;       
+    --light-color: #F9F9F9;      
     --white: #FFFFFF;
     
-    /* Tipografia Defina */
+    /* Tipografia Definida */
     --font-heading: 'Montserrat', sans-serif;
     --font-body: 'Open Sans', sans-serif;
 }
@@ -28,7 +24,6 @@ body {
     background-color: var(--light-color);
 }
 
-/* Cabeçalho estilizado com as cores do esquema */
 header {
     background-color: var(--primary-color);
     color: var(--white);
@@ -47,7 +42,6 @@ header h1 {
     opacity: 0.95;
 }
 
-/* Container Principal */
 main {
     max-width: 1000px;
     margin: 2rem auto;
@@ -96,7 +90,6 @@ li {
     border-left: 4px solid var(--primary-color);
 }
 
-/* Visualização das Paletas de Cores */
 .color-palette {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -123,7 +116,6 @@ li {
 .color-box.dark .swatch { background-color: var(--dark-color); }
 .color-box.light .swatch { background-color: var(--light-color); border: 1px solid #ccc; }
 
-/* Tipografia Exemplos */
 .font-demo {
     background-color: var(--light-color);
     padding: 1.5rem;
@@ -143,8 +135,6 @@ li {
     margin-top: 1rem;
 }
 
-
-/* Rodapé */
 footer {
     background-color: var(--primary-color);
     color: var(--white);
