@@ -1,0 +1,155 @@
+/* ==========================================================================
+   5. Uso do Esquema de Cores & 6. Tipografia no Próprio Documento
+   ========================================================================== */
+
+:root {
+    /* Paleta de Cores do Projeto */
+    --primary-color: #D9534F;    /* Vermelho Terracota */
+    --secondary-color: #5CB85C;  /* Verde Oliva */
+    --dark-color: #222222;       /* Grafite Escuro */
+    --light-color: #F9F9F9;      /* Off-White */
+    --white: #FFFFFF;
+    
+    /* Tipografia Defina */
+    --font-heading: 'Montserrat', sans-serif;
+    --font-body: 'Open Sans', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-body);
+    line-height: 1.6;
+    color: var(--dark-color);
+    background-color: var(--light-color);
+}
+
+/* Cabeçalho estilizado com as cores do esquema */
+header {
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 2.5rem 1rem;
+}
+
+header h1 {
+    font-family: var(--font-heading);
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    opacity: 0.95;
+}
+
+/* Container Principal */
+main {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.plan-card {
+    background-color: var(--white);
+    border-radius: 8px;
+    padding: 1.8rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    border-left: 6px solid var(--secondary-color);
+}
+
+h2 {
+    font-family: var(--font-heading);
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--light-color);
+    padding-bottom: 0.5rem;
+}
+
+h3 {
+    font-family: var(--font-heading);
+    color: var(--dark-color);
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+ul {
+    margin-left: 1.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+li {
+    margin-bottom: 0.4rem;
+}
+
+.scenario {
+    background-color: var(--light-color);
+    padding: 1rem;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    border-left: 4px solid var(--primary-color);
+}
+
+/* Visualização das Paletas de Cores */
+.color-palette {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.color-box {
+    padding: 1rem;
+    border-radius: 6px;
+    background-color: var(--light-color);
+    border: 1px solid #ddd;
+}
+
+.color-box .swatch {
+    display: block;
+    height: 40px;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+}
+
+.color-box.primary .swatch { background-color: var(--primary-color); }
+.color-box.secondary .swatch { background-color: var(--secondary-color); }
+.color-box.dark .swatch { background-color: var(--dark-color); }
+.color-box.light .swatch { background-color: var(--light-color); border: 1px solid #ccc; }
+
+/* Tipografia Exemplos */
+.font-demo {
+    background-color: var(--light-color);
+    padding: 1.5rem;
+    border-radius: 6px;
+}
+
+.font-heading {
+    font-family: var(--font-heading);
+    font-size: 1.4rem;
+    color: var(--primary-color);
+}
+
+.font-body {
+    font-family: var(--font-body);
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+
+/* Rodapé */
+footer {
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+}
