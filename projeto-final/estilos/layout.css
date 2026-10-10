@@ -241,7 +241,7 @@ main {
 .submit-btn {
   width: 100%;
   padding: 0.85rem 1.5rem;
-  background-color: var(--secondary-color);
+  background-color: #095120;
   color: #ffffff;
   font-size: 1.05rem;
   font-weight: 700;
