@@ -195,11 +195,6 @@ main {
   font-size: 0.95rem;
 }
 
-.required {
-  color: #d9534f;
-  font-weight: bold;
-}
-
 .form-group input,
 .form-group select,
 .form-group textarea {
