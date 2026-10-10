@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo - Receitas Rápidas</title>
+  <meta name="description" content="Explore mais de 15 receitas rápidas organizadas por categoria. Filtre, veja detalhes e salve suas favoritas.">
+  <meta name="author" content="Caroline Morais Cardoso">
+  <link rel="icon" href="imagens/favicon.webp" type="image/x-icon">
+  <link rel="stylesheet" href="estilos/estilo.css">
+  <link rel="stylesheet" href="estilos/layout.css">
+  <script src="scripts/footer.js" defer></script>
+  <script type="module">
+    import { setupNavigation } from '../scripts/navegacao.mjs';
+    import { loadRecipes } from '../scripts/receitas.mjs';
+    document.addEventListener('DOMContentLoaded', () => {
+      setupNavigation();
+      loadRecipes();
+    });
+  </script>
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="imagens/favicon.webp" alt="Logo do site Receitas Rápidas" class="logo">
+      <h1>Receitas Rápidas</h1>
+    </div>
+    <button id="hamburger-btn" aria-label="Abrir Menu">&#9776;</button>
+    <nav class="nav-menu" id="nav-menu">
+      <a href="index.html">Início</a>
+      <a href="receitas.html">Receitas</a>
+      <a href="sugestoes.html">Sugerir Receita</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Catálogo Completo de Receitas</h2>
+    
+    <div class="filter-controls">
+      <label for="category-filter"><strong>Filtrar por Categoria:</strong></label>
+      <select id="category-filter" style="padding: 0.5rem; border-radius: 4px;">
+        <option value="todas">Todas as Categorias</option>
+        <option value="aves">Aves</option>
+        <option value="carnes">Carnes</option>
+        <option value="massas">Massas</option>
+        <option value="sopas">Sopas</option>
+        <option value="acompanhamentos">Acompanhamentos</option>
+      </select>
+    </div>
+
+    <div id="recipe-container" class="recipe-grid">
+      <!-- Inserção Dinâmica do JSON via JavaScript -->
+    </div>
+
+    <dialog id="recipe-modal" aria-labelledby="modal-title">
+      <div class="modal-header">
+        <h3 id="modal-title">Título da Receita</h3>
+        <button class="close-modal" id="close-modal-btn" aria-label="Fechar Modal">&times;</button>
+      </div>
+      <div id="modal-body">
+        <!-- Conteúdo do Modal Inserido Dinamicamente -->
+      </div>
+    </dialog>
+  </main>
+
+  <footer class="rodape-principal">
+        <div class="rodape-conteudo">
+            <div class="info-desenvolvimento">
+                <p>Desenvolvido por Caroline Marques Morais</p>
+                <p>&copy; <span id="ano-atual"></span> | Receitas Rápidas</p>
+                <p id="ultima-modificacao"></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Confirmação - Receitas Rápidas</title>
+  <meta name="description" content="Página de confirmação e exibição dos dados enviados no formulário de sugestão de receita.">
+  <meta name="author" content="Caroline Morais Cardoso">
+  <link rel="icon" href="imagens/favicon.webp" type="image/x-icon">
+  <link rel="stylesheet" href="estilos/estilo.css">
+  <link rel="stylesheet" href="estilos/layout.css">
+  <script src="scripts/footer.js" defer></script>
+  <script type="module">
+    import { setupNavigation } from '../scripts/navegacao.mjs';
+    import { displayFormResults } from '../scripts/formulario.mjs';
+
+    document.addEventListener('DOMContentLoaded', () => {
+      setupNavigation();
+      displayFormResults();
+    });
+</script>
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="imagens/favicon.webp" alt="Logo do site Receitas Rápidas" class="logo">
+      <h1>Receitas Rápidas</h1>
+    </div>
+    <button id="hamburger-btn" aria-label="Abrir Menu">&#9776;</button>
+    <nav class="nav-menu" id="nav-menu">
+      <a href="index.html">Início</a>
+      <a href="receitas.html">Receitas</a>
+      <a href="sugestoes.html">Sugerir Receita</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Obrigado pela sua Sugestão!</h2>
+    <p style="margin-bottom: 1rem;">Recebemos as seguintes informações do seu formulário:</p>
+    
+    <div id="form-results" style="background-color: #FFFFFF; color: #222222; padding: 1.5rem; border-radius: 8px; border-left: 5px solid #4C9E4C; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+      <!-- Os dados serão inseridos aqui pelo JavaScript -->
+    </div>
+  </main>
+
+  <footer class="rodape-principal">
+        <div class="rodape-conteudo">
+            <div class="info-desenvolvimento">
+                <p>Desenvolvido por Caroline Marques Morais</p>
+                <p>&copy; <span id="ano-atual"></span> | Receitas Rápidas</p>
+                <p id="ultima-modificacao"></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

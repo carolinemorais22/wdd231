@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Receitas Rápidas - Praticidade no Seu Dia a Dia</title>
+  <meta name="description"
+    content="Descubra receitas culinárias práticas, saborosas e prontas em até 30 minutos. Ideal para quem busca agilidade sem abrir mão do sabor.">
+  <meta name="author" content="Caroline Morais Cardoso">
+  <link rel="icon" href="imagens/favicon.webp" type="image/x-icon">
+
+  <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Receitas Rápidas - Praticidade no Seu Dia a Dia">
+    <meta property="og:description"
+        content="Descubra receitas culinárias práticas, saborosas e prontas em até 30 minutos. Ideal para quem busca agilidade sem abrir mão do sabor.">
+    <meta property="og:image" content="https://carolinemorais22.github.io/wdd231/projeto-final/imagens/hero-image.webp">
+    <meta property="og:url" content="https://carolinemorais22.github.io/wdd231/projeto-final/index.html">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" media="print" onload="this.media='all'">
+<noscript>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap">
+</noscript>
+<link rel="preload" as="image" href="imagens/hero-image.webp" fetchpriority="high">
+  <link rel="stylesheet" href="estilos/estilo.css">
+  <link rel="stylesheet" href="estilos/layout.css">
+  <script src="scripts/footer.js" defer></script>
+
+</head>
+
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="imagens/favicon.webp" alt="Logo do site Receitas Rápidas" class="logo">
+      <h1>Receitas Rápidas</h1>
+    </div>
+    <button id="hamburger-btn" aria-label="Abrir Menu de Navegação">&#9776;</button>
+    <nav class="nav-menu" id="nav-menu">
+      <a href="index.html">Início</a>
+      <a href="receitas.html">Receitas</a>
+      <a href="sugestoes.html">Sugerir Receita</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>Refeições Deliciosas em Poucos Minutos</h2>
+      <p>Aprenda pratos incríveis com poucos ingredientes e técnicas simples.</p>
+      <a href="receitas.html" class="btn">Explorar Catálogo Completo</a>
+    </section>
+
+    <section>
+      <h2>Destaques do Dia</h2>
+      <p>Confira algumas sugestões do nosso acervo:</p>
+
+      <!-- Receitas aleatórias serão inseridas aqui pelo JavaScript -->
+      <div id="featured-container" class="recipe-grid"></div>
+    </section>
+
+    <!-- Modal para exibir detalhes da receita destacada -->
+    <dialog id="recipe-modal" aria-labelledby="modal-title">
+      <div class="modal-header">
+        <h3 id="modal-title">Título da Receita</h3>
+        <button class="close-modal" id="close-modal-btn" aria-label="Fechar Modal">&times;</button>
+      </div>
+      <div id="modal-body"></div>
+    </dialog>
+
+    <section class="callout-banner">
+      <h3>Tem uma receita rápida e incrível?</h3>
+      <p>Compartilhe seu segredo culinário com a nossa comunidade!</p>
+      <a href="sugestoes.html" class="btn" style="background-color: var(--secondary-color); margin-top: 1rem;">Enviar Minha
+        Receita</a>
+    </section>
+  </main>
+
+  <footer class="rodape-principal">
+        <div class="rodape-conteudo">
+            <div class="info-desenvolvimento">
+                <p>Desenvolvido por Caroline Marques Morais</p>
+                <p>&copy; <span id="ano-atual"></span> | Receitas Rápidas</p>
+                <p id="ultima-modificacao"></p>
+            </div>
+        </div>
+    </footer>
+    <script type="module">
+    import { setupNavigation } from '../scripts/navegacao.mjs';
+    import { loadFeaturedRecipes } from '../scripts/aleatorio.mjs';
+
+    document.addEventListener('DOMContentLoaded', () => {
+      setupNavigation();
+      loadFeaturedRecipes(3);
+    });
+  </script>
+</body>
+
+</html>

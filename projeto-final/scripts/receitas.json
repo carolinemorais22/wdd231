@@ -1,0 +1,167 @@
+[
+  {
+    "id": 1,
+    "nome": "Frango Xadrez Express",
+    "categoria": "Aves",
+    "tempoPreparo": "20 min",
+    "porcoes": 4,
+    "dificuldade": "Fácil",
+    "imagem": "../imagens/frango-xadrez.webp",
+    "ingredientes": ["500g de peito de frango em cubos", "1 pimentão vermelho", "1 pimentão verde", "1 cebola", "4 colheres de molho shoyu", "1 colher de amido de milho"],
+    "instrucoes": "Dore o frango no azeite. Adicione os pimentões e a cebola picados. Misture o shoyu com o amido de milho, despeje na frigideira e mexa até engrossar."
+  },
+  {
+    "id": 2,
+    "nome": "Fricassê de Frango Prático",
+    "categoria": "Aves",
+    "tempoPreparo": "25 min",
+    "porcoes": 5,
+    "dificuldade": "Fácil",
+    "imagem": "../imagens/fricasse-frango.webp",
+    "ingredientes": ["500g de frango desfiado", "1 lata de milho", "1 copo de requeijão", "1 caixa de creme de leite", "Batata palha a gosto"],
+    "instrucoes": "Bata o milho, requeijão e creme de leite no liquidificador. Refogue o frango, misture o creme, cubra com muçarela e batata palha e leve ao forno por 10 min."
+  },
+  {
+    "id": 3,
+    "nome": "Omelete Cremosa com Ervas",
+    "categoria": "Acompanhamentos",
+    "tempoPreparo": "10 min",
+    "porcoes": 1,
+    "dificuldade": "Fácil",
+    "imagem": "../imagens/omelete.webp",
+    "ingredientes": ["3 ovos", "2 colheres de leite", "1 colher de manteiga", "Salsinha picada", "Sal e pimenta a gosto"],
+    "instrucoes": "Bata os ovos com o leite, sal e pimenta. Derreta a manteiga na frigideira, despeje a mistura e dobre delicadamente assim que dourar o fundo."
+  },
+  {
+    "id": 4,
+    "nome": "Macarrão Carbonara Rápido",
+    "categoria": "Massas",
+    "tempoPreparo": "15 min",
+    "porcoes": 2,
+    "dificuldade": "Média",
+    "imagem": "../imagens/macarrao-carbonara.webp",
+    "ingredientes": ["200g de espaguete", "100g de bacon em cubos", "2 gemas e 1 ovo inteiro", "50g de queijo parmesão ralado", "Pimenta-do-reino"],
+    "instrucoes": "Cozinhe o macarrão. Frite o bacon. Misture os ovos com o queijo. Desligue o fogo, adicione o macarrão ao bacon e misture os ovos rapidamente para criar o creme."
+  },
+  {
+    "id": 5,
+    "nome": "Tiras de Carne ao Molho Shoyu",
+    "categoria": "Carnes",
+    "tempoPreparo": "15 min",
+    "porcoes": 3,
+    "dificuldade": "Fácil",
+    "imagem": "../imagens/tiras-carne.webp",
+    "ingredientes": ["500g de alcatra em tiras", "1 cebola fatiada", "3 colheres de shoyu", "1 colher de manteiga", "Alho picado"],
+    "instrucoes": "Grelhe a carne na manteiga bem quente. Adicione o alho e a cebola. Finalize despejando o molho shoyu e deixando reduzir por 2 minutos."
+  },
+  {
+    "id": 6,
+    "nome": "Sopa de Legumes",
+    "categoria": "Sopas",
+    "tempoPreparo": "30 min",
+    "porcoes": 4,
+    "dificuldade": "Fácil",
+    "imagem": "../imagens/sopa-legumes.webp",
+    "ingredientes": ["2 batatas", "1 cenoura", "1 chuchu", "1/2 abóbora cabotiá", "1 litro de caldo de legumes"],
+    "instrucoes": "Cozinhe os legumes no caldo até amolecerem. Bata tudo no liquidificador até obter uma textura aveludada. Ajuste o sal e sirva com pão."
+  },
+  {
+    "id": 7,
+    "nome": "Panqueca Fit de Banana",
+    "categoria": "Acompanhamentos",
+    "tempoPreparo": "10 min",
+    "porcoes": 1,
+    "dificuldade": "Fácil",
+    "imagem": "../imagens/panquecas.webp",
+    "ingredientes": ["1 banana madura", "1 ovo", "2 colheres de farelo de aveia", "Canela em pó a gosto"],
+    "instrucoes": "Amasse a banana, misture o ovo e a aveia. Adicione canela e doure pequenas porções na frigideira antiaderente dos dois lados."
+  },
+  {
+    "id": 8,
+    "nome": "Salada Caprese Tradicional",
+    "categoria": "Acompanhamentos",
+    "tempoPreparo": "10 min",
+    "porcoes": 2,
+    "dificuldade": "Fácil",
+    "imagem": "../imagens/salada-caprese.webp",
+    "ingredientes": ["2 tomates maduros", "150g de queijo muçarela de búfala", "Folhas de manjericão fresco", "Azeite de oliva extra virgem", "Sal e pimenta"],
+    "instrucoes": "Fatie os tomates e a muçarela. Intercale as fatias em um prato, decore com o manjericão e regue com bastante azeite, sal e pimenta."
+  },
+  {
+    "id": 9,
+    "nome": "Creme de Abóbora com Gengibre",
+    "categoria": "Sopas",
+    "tempoPreparo": "25 min",
+    "porcoes": 3,
+    "dificuldade": "Fácil",
+    "imagem": "../imagens/creme-abobora.webp",
+    "ingredientes": ["500g de abóbora cabotiá", "1 colher de gengibre ralado", "1 cebola picada", "2 dentes de alho", "Azeite de oliva"],
+    "instrucoes": "Refogue a cebola, alho e gengibre. Adicione a abóbora picada e água até cobrir. Cozinhe até amaciar e bata no liquidificador."
+  },
+  {
+    "id": 10,
+    "nome": "Strogonoff de Carne Rápido",
+    "categoria": "Carnes",
+    "tempoPreparo": "20 min",
+    "porcoes": 4,
+    "dificuldade": "Fácil",
+    "imagem": "../imagens/strogonoff.webp",
+    "ingredientes": ["500g de filé mignon ou alcatra", "1 caixa de creme de leite", "2 colheres de ketchup", "1 colher de mostarda", "Champignon fatiado"],
+    "instrucoes": "Dore a carne em fogo alto. Adicione o ketchup, mostarda e champignon. Desligue o fogo e misture o creme de leite."
+  },
+  {
+    "id": 11,
+    "nome": "Penne ao Molho Pesto",
+    "categoria": "Massas",
+    "tempoPreparo": "15 min",
+    "porcoes": 2,
+    "dificuldade": "Fácil",
+    "imagem": "../imagens/penne-pesto.webp",
+    "ingredientes": ["250g de macarrão penne", "1 xícara de folhas de manjericão", "1/2 xícara de azeite", "30g de nozes ou pinoli", "50g de queijo parmesão"],
+    "instrucoes": "Cozinhe a massa. Processar no liquidificador o manjericão, azeite, nozes, alho e parmesão. Misture o molho pesto à massa quente."
+  },
+  {
+    "id": 12,
+    "nome": "Sobrecoxa Assada com Mostarda e Mel",
+    "categoria": "Aves",
+    "tempoPreparo": "35 min",
+    "porcoes": 4,
+    "dificuldade": "Média",
+    "imagem": "../imagens/sobrecoxa.webp",
+    "ingredientes": ["4 sobrecoxas de frango", "2 colheres de mostarda", "2 colheres de mel", "1 dente de alho esmagado", "Sal e pimenta"],
+    "instrucoes": "Misture a mostarda, mel e temperos. Pincele sobre as sobrecoxas e leve ao forno preaquecido a 200°C por 30 minutos até dourar."
+  },
+  {
+    "id": 13,
+    "nome": "Escondidinho de Carne Seca Prático",
+    "categoria": "Carnes",
+    "tempoPreparo": "30 min",
+    "porcoes": 4,
+    "dificuldade": "Média",
+    "imagem": "../imagens/escondidinho.webp",
+    "ingredientes": ["400g de carne seca dessalgada e desfia", "500g de mandioca cozida e amassada", "1/2 xícara de leite", "100g de queijo muçarela"],
+    "instrucoes": "Faça um purê com a mandioca e o leite. Monte em um refratário a carne seca, cubra com o purê e o queijo e gratine no forno."
+  },
+  {
+    "id": 14,
+    "nome": "Sopa Canja de Galinha Express",
+    "categoria": "Sopas",
+    "tempoPreparo": "25 min",
+    "porcoes": 4,
+    "dificuldade": "Fácil",
+    "imagem": "../imagens/sopa-canja.webp",
+    "ingredientes": ["300g de peito de frango picado", "1/2 xícara de arroz", "1 cenoura picada", "1 batata picada", "1,5L de caldo de galinha"],
+    "instrucoes": "Refogue o frango. Adicione os legumes, o arroz e o caldo. Cozinhe na panela de pressão por 15 minutos após pegar pressão."
+  },
+  {
+    "id": 15,
+    "nome": "Nhoque Prático de Batata",
+    "categoria": "Massas",
+    "tempoPreparo": "30 min",
+    "porcoes": 3,
+    "dificuldade": "Média",
+    "imagem": "../imagens/nhoque.webp",
+    "ingredientes": ["500g de batatas cozidas e amassadas", "1 xícara de farinha de trigo", "1 gema de ovo", "Molho de tomate pronto"],
+    "instrucoes": "Misture a batata, gema e farinha até formar massa. Faça rolinhos, corte, cozinhe em água fervente até subirem e sirva com o molho."
+  }
+]
