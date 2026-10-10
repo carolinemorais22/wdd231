@@ -87,9 +87,10 @@ dialog::backdrop {
   text-align: center;
 }
 
-.required{
-  color: #7b0009;
-  font-size: 1rem;
+.required,
+span.required {
+  color: #c02b28 !important;
+  font-weight: bold;
 }
 
 .hero-container {
@@ -104,6 +105,12 @@ dialog::backdrop {
   align-items: center;
   justify-content: center;
   min-height: 320px;
+}
+
+section.hero-container .hero-content,
+section.hero-container h2,
+section.hero-container p {
+  color: #ffffff !important;
 }
 
 .hero-img {
@@ -131,19 +138,16 @@ dialog::backdrop {
   position: relative;
   z-index: 3;
   text-align: center;
-  color: #ffffff !important;
   padding: 2.5rem 1.5rem;
   max-width: 750px;
 }
 
 .hero-content h2 {
-  color: #ffffff !important;
   font-size: 2rem;
   margin-bottom: 0.8rem;
 }
 
 .hero-content p {
-  color: #f1f1f1 !important;
   font-size: 1.1rem;
   margin-bottom: 1.5rem;
 }
