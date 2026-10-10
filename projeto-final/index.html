@@ -11,24 +11,29 @@
   <link rel="icon" href="imagens/favicon.webp" type="image/x-icon">
 
   <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Receitas Rápidas - Praticidade no Seu Dia a Dia">
-    <meta property="og:description"
-        content="Descubra receitas culinárias práticas, saborosas e prontas em até 30 minutos. Ideal para quem busca agilidade sem abrir mão do sabor.">
-    <meta property="og:image" content="https://carolinemorais22.github.io/wdd231/projeto-final/imagens/hero-image.webp">
-    <meta property="og:url" content="https://carolinemorais22.github.io/wdd231/projeto-final/index.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Receitas Rápidas - Praticidade no Seu Dia a Dia">
+  <meta property="og:description"
+    content="Página de receitas culinárias práticas, saborosas e prontas em até 30 minutos. Ideal para quem busca agilidade sem abrir mão do sabor.">
+  <meta property="og:image" content="https://carolinemorais22.github.io/wdd231/projeto-final/imagens/hero-image.webp">
+  <meta property="og:url" content="https://carolinemorais22.github.io/wdd231/projeto-final/index.html">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" media="print" onload="this.media='all'">
-<noscript>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap">
-</noscript>
-<link rel="preload" as="image" href="imagens/hero-image.webp" fetchpriority="high">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style"
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap"
+    media="print" onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap">
+  </noscript>
+  <link rel="preload" as="image" href="imagens/hero-image.webp" fetchpriority="high">
   <link rel="stylesheet" href="estilos/estilo.css">
   <link rel="stylesheet" href="estilos/layout.css">
   <script src="scripts/footer.js" defer></script>
+  <script type="module" src="scripts/mainIndex.mjs"></script>
 
 </head>
 
@@ -47,10 +52,15 @@
   </header>
 
   <main>
-    <section class="hero">
-      <h2>Refeições Deliciosas em Poucos Minutos</h2>
-      <p>Aprenda pratos incríveis com poucos ingredientes e técnicas simples.</p>
-      <a href="receitas.html" class="btn">Explorar Catálogo Completo</a>
+    <section class="hero-container">
+      <img src="imagens/hero-image.webp" alt="Prato delicioso preparado rapidamente" class="hero-img" width="1200"
+        height="450" fetchpriority="high">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h2>Refeições Deliciosas em Poucos Minutos</h2>
+        <p>Aprenda pratos incríveis com poucos ingredientes e técnicas simples.</p>
+        <a href="receitas.html" class="btn">Explorar Catálogo Completo</a>
+      </div>
     </section>
 
     <section>
@@ -73,29 +83,21 @@
     <section class="callout-banner">
       <h3>Tem uma receita rápida e incrível?</h3>
       <p>Compartilhe seu segredo culinário com a nossa comunidade!</p>
-      <a href="sugestoes.html" class="btn" style="background-color: var(--secondary-color); margin-top: 1rem;">Enviar Minha
+      <a href="sugestoes.html" class="btn" style="background-color: var(--secondary-color); margin-top: 1rem;">Enviar
+        Minha
         Receita</a>
     </section>
   </main>
 
   <footer class="rodape-principal">
-        <div class="rodape-conteudo">
-            <div class="info-desenvolvimento">
-                <p>Desenvolvido por Caroline Marques Morais</p>
-                <p>&copy; <span id="ano-atual"></span> | Receitas Rápidas</p>
-                <p id="ultima-modificacao"></p>
-            </div>
-        </div>
-    </footer>
-    <script type="module">
-    import { setupNavigation } from '../scripts/navegacao.mjs';
-    import { loadFeaturedRecipes } from '../scripts/aleatorio.mjs';
-
-    document.addEventListener('DOMContentLoaded', () => {
-      setupNavigation();
-      loadFeaturedRecipes(3);
-    });
-  </script>
+    <div class="rodape-conteudo">
+      <div class="info-desenvolvimento">
+        <p>Desenvolvido por Caroline Marques Morais</p>
+        <p>&copy; <span id="ano-atual"></span> | Receitas Rápidas</p>
+        <p id="ultima-modificacao"></p>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>

@@ -1,24 +1,41 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Catálogo - Receitas Rápidas</title>
-  <meta name="description" content="Explore mais de 15 receitas rápidas organizadas por categoria. Filtre, veja detalhes e salve suas favoritas.">
+  <title>Receitas Rápidas - Praticidade no Seu Dia a Dia</title>
+  <meta name="description"
+    content="Página de receitas culinárias práticas, saborosas e prontas em até 30 minutos. Ideal para quem busca agilidade sem abrir mão do sabor.">
   <meta name="author" content="Caroline Morais Cardoso">
   <link rel="icon" href="imagens/favicon.webp" type="image/x-icon">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Receitas Rápidas - Praticidade no Seu Dia a Dia">
+  <meta property="og:description"
+    content="">
+  <meta property="og:image" content="https://carolinemorais22.github.io/wdd231/projeto-final/imagens/hero-image.webp">
+  <meta property="og:url" content="https://carolinemorais22.github.io/wdd231/projeto-final/index.html">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style"
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap"
+    media="print" onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap">
+  </noscript>
+  <link rel="preload" as="image" href="imagens/hero-image.webp" fetchpriority="high">
   <link rel="stylesheet" href="estilos/estilo.css">
   <link rel="stylesheet" href="estilos/layout.css">
   <script src="scripts/footer.js" defer></script>
-  <script type="module">
-    import { setupNavigation } from '../scripts/navegacao.mjs';
-    import { loadRecipes } from '../scripts/receitas.mjs';
-    document.addEventListener('DOMContentLoaded', () => {
-      setupNavigation();
-      loadRecipes();
-    });
-  </script>
+  <script type="module" src="scripts/mainReceitas.mjs"></script>
 </head>
+
 <body>
   <header>
     <div class="logo-container">
@@ -35,10 +52,10 @@
 
   <main>
     <h2>Catálogo Completo de Receitas</h2>
-    
+
     <div class="filter-controls">
       <label for="category-filter"><strong>Filtrar por Categoria:</strong></label>
-      <select id="category-filter" style="padding: 0.5rem; border-radius: 4px;">
+      <select id="category-filter">
         <option value="todas">Todas as Categorias</option>
         <option value="aves">Aves</option>
         <option value="carnes">Carnes</option>
@@ -64,13 +81,14 @@
   </main>
 
   <footer class="rodape-principal">
-        <div class="rodape-conteudo">
-            <div class="info-desenvolvimento">
-                <p>Desenvolvido por Caroline Marques Morais</p>
-                <p>&copy; <span id="ano-atual"></span> | Receitas Rápidas</p>
-                <p id="ultima-modificacao"></p>
-            </div>
-        </div>
-    </footer>
+    <div class="rodape-conteudo">
+      <div class="info-desenvolvimento">
+        <p>Desenvolvido por Caroline Marques Morais</p>
+        <p>&copy; <span id="ano-atual"></span> | Receitas Rápidas</p>
+        <p id="ultima-modificacao"></p>
+      </div>
+    </div>
+  </footer>
 </body>
+
 </html>
