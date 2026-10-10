@@ -87,9 +87,7 @@ dialog::backdrop {
   text-align: center;
 }
 
-form .required,
-form span.required,
-label span.required,
+
 span.required {
   color: #4b0909 !important;
   font-weight: bold !important;
@@ -100,8 +98,8 @@ span.required {
   width: 100%;
   border-radius: 12px;
   margin-bottom: 2rem;
-  color: #ffffff !important;
-  background-color: #000000 !important;
+  color: rgb(235, 235, 240) !important;
+  background-color: rgb(34, 34, 34) !important;
   display: flex;
   align-items: center;
   justify-content: center;
