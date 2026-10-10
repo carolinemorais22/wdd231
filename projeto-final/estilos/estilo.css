@@ -75,7 +75,7 @@ dialog::backdrop {
 
 .btn {
   display: inline-block;
-  background-color: var(--secondary-color);
+  background-color: #095120;
   color: var(--white);
   padding: 0.6rem 1.2rem;
   border: none;
@@ -97,11 +97,22 @@ dialog::backdrop {
   border-radius: 12px;
   overflow: hidden;
   margin-bottom: 2rem;
-  background-color: #1a1a1a !important; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 320px;
+}
+
+.hero-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 1;
 }
 
 .hero-overlay {
@@ -110,7 +121,7 @@ dialog::backdrop {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.65);
+  background: rgba(0, 0, 0, 0.70);
   z-index: 2;
 }
 
@@ -118,40 +129,36 @@ dialog::backdrop {
   position: relative;
   z-index: 3;
   text-align: center;
-  color: #ffffff !important;
+  color: #ffffff;
   padding: 2.5rem 1.5rem;
   max-width: 750px;
 }
 
 .hero-content h2 {
-  color: #ffffff !important;
+  color: #ffffff;
   font-size: 2rem;
   margin-bottom: 0.8rem;
-  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.9);
 }
 
 .hero-content p {
-  color: #ffffff !important;
+  color: #f1f1f1;
   font-size: 1.1rem;
   margin-bottom: 1.5rem;
 }
 
-.btn-verde, 
-.callout-banner .btn,
-a.btn-success {
-  background-color: #1b5e20 !important; 
-  color: #ffffff !important;
+.hero-content .btn {
+  background-color: var(--secondary-color);
+  color: #ffffff;
   padding: 0.8rem 1.6rem;
   font-size: 1rem;
   border-radius: 6px;
   text-decoration: none;
   font-weight: bold;
   display: inline-block;
-  transition: background-color 0.2s;
+  transition: background-color 0.2s, transform 0.2s;
 }
 
-.btn-verde:hover,
-.callout-banner .btn:hover,
-a.btn-success:hover {
-  background-color: #1b5e20 !important;
+.hero-content .btn:hover {
+  background-color: #095120;
+  transform: translateY(-2px);
 }
