@@ -87,10 +87,12 @@ dialog::backdrop {
   text-align: center;
 }
 
-.required,
+form .required,
+form span.required,
+label span.required,
 span.required {
-  color: #c02b28 !important;
-  font-weight: bold;
+  color: #b91c1c !important;
+  font-weight: bold !important;
 }
 
 .hero-container {
@@ -100,7 +102,7 @@ span.required {
   overflow: hidden;
   margin-bottom: 2rem;
   color: #ffffff !important;
-  background-color: #121212 !important;
+  background-color: #000000 !important;
   display: flex;
   align-items: center;
   justify-content: center;
