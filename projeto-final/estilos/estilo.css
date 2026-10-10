@@ -90,55 +90,59 @@ dialog::backdrop {
 
 span.required {
   color: #4b0909 !important;
+  background-color: #ffffff !important;
   font-weight: bold !important;
 }
 
 .hero-container {
   position: relative;
+  isolation: isolate;
   width: 100%;
-  border-radius: 12px;
+  min-height: 320px;
   margin-bottom: 2rem;
-  color: rgb(235, 235, 240) !important;
-  background-color: rgb(34, 34, 34) !important;
+  border-radius: 12px;
+  overflow: hidden;
+
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 320px;
-}
 
-section.hero-container .hero-content,
-section.hero-container h2,
-section.hero-container p {
-  color: #ffffff !important;
+  background-color: #222222;
+  color: #ffffff;
 }
 
 .hero-img {
   position: absolute;
-  top: 0;
-  left: 0;
+  inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
-  z-index: 1;
+  z-index: -2;
 }
 
 .hero-overlay {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.70);
-  z-index: 2;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+  z-index: -1;
+  pointer-events: none;
 }
 
 .hero-content {
   position: relative;
-  z-index: 3;
-  text-align: center;
-  padding: 2.5rem 1.5rem;
+  z-index: 1;
+  width: 100%;
   max-width: 750px;
+  padding: 2.5rem 1.5rem;
+  box-sizing: border-box;
+  text-align: center;
+  color: #ffffff;
+}
+
+.hero-content h2,
+.hero-content p {
+  color: #ffffff;
 }
 
 .hero-content h2 {
@@ -152,15 +156,14 @@ section.hero-container p {
 }
 
 .hero-content .btn {
-  background-color: #095120 !important;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
-  color: #ffffff !important;
+  display: inline-block;
   padding: 0.8rem 1.6rem;
+  background-color: #095120;
+  color: #ffffff;
   font-size: 1rem;
+  font-weight: bold;
   border-radius: 6px;
   text-decoration: none;
-  font-weight: bold;
-  display: inline-block;
 }
 
 .hero-content .btn:hover {
